@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parapentitis • Escuela y Vuelos en Parapente en Fortín de las Flores</title>
+    <meta name="description" content="Vuela sobre el Pico de Orizaba con Salvador Lara. Vuelos tándem certificados APPI, cursos de pilotaje y expediciones outdoor en Veracruz.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Open Graph para WhatsApp y redes sociales -->
+    <meta property="og:title" content="Parapentitis • Vuela en Parapente en Fortín de las Flores">
+    <meta property="og:description" content="Reserva tu vuelo en tándem con pilotos certificados APPI. ¡Aventura y seguridad aseguradas!">
+    <meta property="og:image" content="https://basecamp420.com/uploads/covers/parapentitis-hero.webp">
+    <meta property="og:url" content="https://parapentitis.com">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-100 antialiased selection:bg-emerald-500 selection:text-black">
+
+    <!-- Header / Barra de Navegación -->
+    <header class="fixed top-0 left-0 right-0 z-50 border-b border-zinc-800/80 bg-zinc-950/80 backdrop-blur-md">
+        <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+            <div class="flex items-center gap-3">
+                <span class="rounded-xl bg-emerald-500/20 px-3 py-1 font-mono text-xs font-bold text-emerald-400 border border-emerald-500/40">
+                    APPI CERTIFIED
+                </span>
+                <span class="text-xl font-extrabold tracking-tight text-white">Parapentitis</span>
+            </div>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-zinc-300">
+                <a href="#vuelos" class="hover:text-emerald-400 transition">Vuelos Tándem</a>
+                <a href="#cursos" class="hover:text-emerald-400 transition">Cursos APPI</a>
+                <a href="#nosotros" class="hover:text-emerald-400 transition">Instructor</a>
+                <a href="https://www.basecamp420.com" target="_blank" class="hover:text-emerald-400 transition">Tienda Basecamp 420</a>
+            </nav>
+            <a href="https://wa.me/522727258748?text=Hola%20Parapentitis,%20quiero%20información%20para%20reservar%20un%20vuelo%20en%20parapente." 
+               target="_blank" 
+               class="rounded-xl bg-emerald-500 px-5 py-2.5 text-sm font-bold text-black transition hover:bg-emerald-400 shadow-lg shadow-emerald-500/20">
+               Reservar por WhatsApp
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative flex min-h-[90vh] items-center justify-center bg-zinc-900 px-6 pt-24 text-center">
+        <!-- Imagen de fondo con overlay oscuro -->
+        <div class="absolute inset-0 z-0 overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/70 to-zinc-950/40 z-10"></div>
+            <img src="https://images.unsplash.com/photo-1510337550647-e84f83e341ca?q=80&w=1920&auto=format&fit=crop" 
+                 alt="Parapente en Fortín de las Flores" 
+                 class="h-full w-full object-cover opacity-40 scale-105">
+        </div>
+
+        <div class="relative z-20 mx-auto max-w-4xl py-12">
+            <span class="inline-block rounded-full bg-emerald-500/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-emerald-400 border border-emerald-500/30 mb-6">
+                Despegues desde Fortín de las Flores, Veracruz
+            </span>
+            <h1 class="text-4xl font-black tracking-tight text-white sm:text-6xl md:text-7xl">
+                Siente la libertad de volar sobre el <span class="text-emerald-400">Pico de Orizaba</span>
+            </h1>
+            <p class="mx-auto mt-6 max-w-2xl text-lg text-zinc-300">
+                Vive la experiencia del vuelo libre con instructores certificados APPI. Seguridad, adrenalina y paisajes incomparables con Salvador Lara y el equipo de Parapentitis.
+            </p>
+            <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://wa.me/522727258748?text=Hola%20Salvador,%20quiero%20agendar%20mi%20vuelo%20en%20parapente." 
+                   target="_blank"
+                   class="rounded-2xl bg-emerald-500 px-8 py-4 text-base font-extrabold text-black transition hover:bg-emerald-400 shadow-xl shadow-emerald-500/20">
+                    Agendar Vuelo Támdem
+                </a>
+                <a href="#cursos" 
+                   class="rounded-2xl border border-zinc-700 bg-zinc-900/80 px-8 py-4 text-base font-semibold text-white transition hover:bg-zinc-800">
+                    Conocer Cursos APPI
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Experiencias / Servicios -->
+    <section id="vuelos" class="py-24 px-6 bg-zinc-950">
+        <div class="mx-auto max-w-7xl">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-extrabold text-white sm:text-4xl">Nuestras Experiencias de Vuelo</h2>
+                <p class="mt-4 text-zinc-400">Elige tu aventura en el aire con respaldo profesional y equipo de alta gama (MacPara).</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="rounded-3xl border border-zinc-800 bg-zinc-900/60 p-8 flex flex-col justify-between hover:border-emerald-500/50 transition">
+                    <div>
+                        <div class="h-12 w-12 rounded-2xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 font-bold text-xl mb-6 border border-emerald-500/20">01</div>
+                        <h3 class="text-xl font-bold text-white mb-2">Vuelo Tándem Comercial</h3>
+                        <p class="text-zinc-400 text-sm leading-relaxed">
+                            Vuela acompañado de un piloto instructor certificado. No necesitas experiencia previa. Incluye equipo completo y opción de video GoPro.
+                        </p>
+                    </div>
+                    <div class="mt-8 border-t border-zinc-800 pt-6 flex items-center justify-between">
+                        <span class="text-emerald-400 font-bold text-lg">Cupos Abiertos</span>
+                        <a href="https://wa.me/522727258748?text=Hola,%20quiero%20reservar%20un%20vuelo%20tandem." target="_blank" class="text-xs font-bold uppercase tracking-wider text-white bg-zinc-800 px-4 py-2 rounded-xl hover:bg-zinc-700 transition">Reservar →</a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div id="cursos" class="rounded-3xl border border-zinc-800 bg-zinc-900/60 p-8 flex flex-col justify-between hover:border-emerald-500/50 transition">
+                    <div>
+                        <div class="h-12 w-12 rounded-2xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 font-bold text-xl mb-6 border border-emerald-500/20">02</div>
+                        <h3 class="text-xl font-bold text-white mb-2">Escuela de Pilotaje APPI</h3>
+                        <p class="text-zinc-400 text-sm leading-relaxed">
+                            Formación profesional desde nivel principiante (A1/A2) hasta perfeccionamiento y maniobras SIV con estándares internacionales.
+                        </p>
+                    </div>
+                    <div class="mt-8 border-t border-zinc-800 pt-6 flex items-center justify-between">
+                        <span class="text-emerald-400 font-bold text-lg">Inicia Próximo Mes</span>
+                        <a href="https://wa.me/522727258748?text=Hola,%20me%20interesan%20los%20cursos%20de%20pilotaje%20APPI." target="_blank" class="text-xs font-bold uppercase tracking-wider text-white bg-zinc-800 px-4 py-2 rounded-xl hover:bg-zinc-700 transition">Informes →</a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="rounded-3xl border border-zinc-800 bg-zinc-900/60 p-8 flex flex-col justify-between hover:border-emerald-500/50 transition">
+                    <div>
+                        <div class="h-12 w-12 rounded-2xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 font-bold text-xl mb-6 border border-emerald-500/20">03</div>
+                        <h3 class="text-xl font-bold text-white mb-2">Expediciones Outdoor & Renta</h3>
+                        <p class="text-zinc-400 text-sm leading-relaxed">
+                            Alianza con Basecamp 420 para renta de equipo certificado, logística de montaña y vuelos en las mejores zonas de Veracruz y la región.
+                        </p>
+                    </div>
+                    <div class="mt-8 border-t border-zinc-800 pt-6 flex items-center justify-between">
+                        <span class="text-emerald-400 font-bold text-lg">Soporte Técnico</span>
+                        <a href="https://wa.me/522727258748?text=Hola,%20necesito%20info%20sobre%20renta%20o%20equipo." target="_blank" class="text-xs font-bold uppercase tracking-wider text-white bg-zinc-800 px-4 py-2 rounded-xl hover:bg-zinc-700 transition">Consultar →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Alianza & Instructor -->
+    <section id="nosotros" class="py-20 px-6 bg-zinc-900/40 border-y border-zinc-800/80">
+        <div class="mx-auto max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-emerald-400 font-mono text-xs uppercase tracking-widest font-bold">Liderazgo Profesional</span>
+                <h2 class="text-3xl font-extrabold text-white mt-2 mb-4">Dirigido por Salvador Lara</h2>
+                <p class="text-zinc-300 text-sm leading-relaxed mb-4">
+                    Piloto instructor certificado por la APPI (Association of Paragliding Pilots and Instructors) con años de experiencia guiando despegues seguros en Fortín de las Flores y cumbres de México.
+                </p>
+                <p class="text-zinc-400 text-sm leading-relaxed">
+                    Trabajamos de la mano con <strong class="text-white">Basecamp 420</strong> para ofrecerte una experiencia integral de aventura, equipo especializado y logística en Orizaba y sus alrrededores.
+                </p>
+            </div>
+            <div class="rounded-3xl border border-zinc-800 bg-zinc-900 p-8 text-center relative overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-br from-emerald-500/10 to-transparent pointer-events-none"></div>
+                <h3 class="text-xl font-bold text-white mb-2">¿Listo para despegar?</h3>
+                <p class="text-zinc-400 text-sm mb-6">Consulta condiciones meteorológicas del día y aparta tu horario por WhatsApp.</p>
+                <a href="https://wa.me/522727258748?text=Hola%20Salvador,%20quiero%20saber%20el%20clima%20y%20disponibilidad%20para%20volar." 
+                   target="_blank"
+                   class="inline-block w-full rounded-xl bg-emerald-500 py-3.5 text-sm font-bold text-black transition hover:bg-emerald-400">
+                    Hablar con Salvador Lara
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 bg-zinc-950 text-center text-xs text-zinc-500">
+        <div class="mx-auto max-w-7xl flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Parapentitis • Fortín de las Flores, Veracruz. Aliado con Basecamp 420.</p>
+            <div class="flex gap-6">
+                <a href="https://www.basecamp420.com" target="_blank" class="hover:text-zinc-300 transition">Basecamp 420</a>
+                <a href="https://wa.me/522727258748" target="_blank" class="hover:text-zinc-300 transition">WhatsApp (272 725 8748)</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

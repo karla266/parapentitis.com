@@ -1,0 +1,75 @@
+@import "tailwindcss";
+@source "../index.html";
+
+@theme {
+  --color-lime: #c4f267;
+  --color-ink: #111815;
+}
+
+:root {
+  color-scheme: dark;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #111815;
+  color: #f4f4ec;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+body { margin: 0; }
+a { text-underline-offset: .25em; }
+button, a { -webkit-tap-highlight-color: transparent; }
+::selection { background: #c4f267; color: #111815; }
+:focus-visible { outline: 3px solid #c4f267; outline-offset: 6px; }
+.shell { width: min(1200px, calc(100% - 3rem)); margin-inline: auto; }
+.eyebrow { font-size: .72rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
+.muted { color: #b6bfb8; }
+.site-header { background: #111815; border-bottom: 1px solid #ffffff14; }
+.brand { font-size: 1.15rem; font-weight: 850; letter-spacing: -.05em; }
+.nav-link { font-size: .83rem; color: #d3d9d4; transition: color .2s; }
+.nav-link:hover { color: #c4f267; }
+.button { display: inline-flex; align-items: center; justify-content: center; gap: .8rem; min-height: 48px; padding: .9rem 1.35rem; border-radius: .35rem; font-size: .88rem; font-weight: 750; text-align: center; transition: background .2s, transform .2s; }
+.button:hover { transform: translateY(-2px); }
+.button-primary { background: #c4f267; color: #111815; }
+.button-primary:hover { background: #d5ff87; }
+.button-outline { border: 1px solid #ffffff55; color: #fff; background: #11181533; }
+.button-outline:hover { background: #ffffff14; }
+.hero { position: relative; isolation: isolate; min-height: 740px; display: flex; align-items: center; overflow: hidden; background: #263d39; }
+.hero-photo { position: absolute; inset: 0; z-index: -3; background-image: url("https://commons.wikimedia.org/wiki/Special:Redirect/file/Paragliding_%284532267391%29.jpg"), url("/public/flight-landscape.svg"); background-size: cover; background-position: center; }
+.hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, #0b1514e8 0%, #0b1514a6 45%, #0b151426 100%), linear-gradient(0deg, #111815 0%, transparent 35%); z-index: -2; }
+.hero h1 { font-size: clamp(3.1rem, 7vw, 6.4rem); line-height: .99; font-weight: 800; letter-spacing: -.065em; max-width: 860px; }
+.hero-copy { max-width: 490px; color: #e0e5df; line-height: 1.75; }
+.location-tag { border: 1px solid #ffffff38; border-radius: 2rem; background: #11181555; display: inline-flex; gap: .65rem; align-items: center; padding: .6rem .9rem; }
+.section-title { font-size: clamp(2.1rem, 4vw, 3.4rem); font-weight: 750; letter-spacing: -.05em; line-height: 1.08; }
+.service-card { padding: 2rem; background: #19221e; border: 1px solid #ffffff12; border-radius: .65rem; display: flex; flex-direction: column; }
+.service-card.featured { border-color: #c4f26766; background: linear-gradient(145deg, #283927, #19221e 70%); }
+.card-icon { width: 48px; height: 48px; display: grid; place-items: center; border-radius: .55rem; background: #c4f26712; color: #c4f267; }
+.card-icon svg { width: 27px; height: 27px; }
+.service-card h3 { font-size: 1.4rem; font-weight: 700; letter-spacing: -.025em; }
+.service-card p { color: #b6bfb8; font-size: .92rem; line-height: 1.8; }
+.card-link { color: #c4f267; font-size: .85rem; font-weight: 700; margin-top: auto; padding-top: 2rem; }
+.card-link:hover { text-decoration: underline; }
+.trust { background: #1b2620; border-block: 1px solid #ffffff0f; }
+.check { color: #c4f267; padding-right: .65rem; }
+.alliance { background: #111815; border: 1px solid #ffffff20; padding: 2rem; border-radius: .65rem; }
+.contact { background: #c4f267; color: #111815; border-radius: .75rem; }
+.contact .button { background: #111815; color: #fff; }
+.contact .button:hover { background: #2b3c30; }
+.whatsapp { position: fixed; right: 1.5rem; bottom: 1.5rem; z-index: 20; display: grid; place-items: center; width: 60px; height: 60px; background: #c4f267; color: #111815; border: 3px solid #111815; border-radius: 50%; box-shadow: 0 6px 25px #0005; }
+.whatsapp:hover { background: #d5ff87; }
+details { border-bottom: 1px solid #ffffff20; padding-block: 1rem; }
+summary { cursor: pointer; font-size: .85rem; font-weight: 600; }
+details p { font-size: .8rem; color: #b6bfb8; line-height: 1.8; margin-top: .8rem; max-width: 850px; }
+.skip-link { position: fixed; top: .5rem; left: .5rem; transform: translateY(-200%); z-index: 50; padding: 1rem; background: #c4f267; color: #111815; }
+.skip-link:focus { transform: none; }
+@media (max-width: 640px) {
+  .shell { width: calc(100% - 2.5rem); }
+  .hero { min-height: 730px; }
+  .hero::before { background: linear-gradient(90deg, #0b1514db, #0b15147d), linear-gradient(0deg, #111815, transparent 70%); }
+  .hero-photo { background-position: 65% center; }
+  .service-card, .alliance { padding: 1.5rem; }
+  .whatsapp { right: 1rem; bottom: 1rem; width: 56px; height: 56px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  :root { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; }
+}
