@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://parapentitis.com/sitemap.xml
