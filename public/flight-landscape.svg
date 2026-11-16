@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1280" viewBox="0 0 1920 1280">
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#33696d"/>
+      <stop offset=".65" stop-color="#9bb6a2"/>
+      <stop offset="1" stop-color="#cfceab"/>
+    </linearGradient>
+    <linearGradient id="mountain" x2=".4" y2="1">
+      <stop stop-color="#64877c"/>
+      <stop offset="1" stop-color="#243f38"/>
+    </linearGradient>
+    <linearGradient id="wing" x2="0" y2="1">
+      <stop stop-color="#d6ff8e"/>
+      <stop offset="1" stop-color="#83b53f"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h1920v1280H0z"/>
+  <circle cx="1420" cy="290" r="115" fill="#f3e7ba" opacity=".5"/>
+  <path d="m0 790 230-190 165 83 200-135 205 117 210-180 170-85 175 260 195-120 170 130v610H0Z" fill="#72968b"/>
+  <path d="m550 900 390-260 230-350 75-50 74 105 85 155 140 173 176 227Z" fill="url(#mountain)"/>
+  <path d="m1080 427 90-137 75-50 74 105 47 86-65-43-34 25-32-66-31 50-37-15-35 47-20-18Z" fill="#e1e9df"/>
+  <path d="m0 1010 240-185 190 135 240-128 210 198 220-164 170 138 220-173 230 179v270H0Z" fill="#2b5144"/>
+  <path d="m0 1180 260-175 185 178 180-98 265 195H0Zm980 100 380-221 180 89 180-130 200 70v192Z" fill="#172f29"/>
+  <g transform="translate(1370 355) rotate(-12)">
+    <path d="M-170 0Q0-175 170 0Q0-87-170 0Z" fill="url(#wing)"/>
+    <path d="M-170 0Q0-175 170 0" fill="none" stroke="#e9ffd0" stroke-width="5"/>
+    <g fill="none" stroke="#eff4d8" stroke-width="2" opacity=".8">
+      <path d="m-150-10 145 185M-90-47l85 222M0-65v240M90-47 5 175M150-10 5 175"/>
+    </g>
+    <circle cx="0" cy="155" r="9" fill="#142722"/>
+    <path d="m-4 170 9 23-19 18m19-18 17 10M-4 170l-15-14m15 14 18-14" fill="none" stroke="#142722" stroke-width="8" stroke-linecap="round"/>
+  </g>
+</svg>

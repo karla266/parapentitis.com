@@ -1,0 +1,10 @@
+node_modules/
+dist/
+public/styles.css
+.vercel/
+.netlify/
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example

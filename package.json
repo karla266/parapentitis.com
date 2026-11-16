@@ -1,0 +1,16 @@
+{
+  "name": "parapentitis",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing estática de Parapentitis, Fortín de las Flores, Veracruz.",
+  "scripts": {
+    "build": "npm run build:css && npm run build:site",
+    "build:css": "tailwindcss -i ./src/styles.css -o ./public/styles.css --minify",
+    "build:site": "node -e \"const fs=require('node:fs');fs.rmSync('dist',{recursive:true,force:true});fs.mkdirSync('dist');for(const file of ['index.html','robots.txt','sitemap.xml'])fs.copyFileSync(file,'dist/'+file);fs.cpSync('public','dist/public',{recursive:true});\"",
+    "dev": "tailwindcss -i ./src/styles.css -o ./public/styles.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "4.3.4",
+    "tailwindcss": "4.3.4"
+  }
+}
